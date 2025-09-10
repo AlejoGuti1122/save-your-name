@@ -18,14 +18,14 @@ import {
 import { initializeApp } from "firebase/app"
 import { addDoc, collection, getFirestore } from "firebase/firestore"
 
-// Configuración de Firebase para tu proyecto
+// Configuración de Firebase usando variables de entorno
 const firebaseConfig = {
-  apiKey: "AIzaSyBCfYGsvzHLmg2plvmIfxAiudQfv2czaIA",
-  authDomain: "save-your-name.firebaseapp.com",
-  projectId: "save-your-name",
-  storageBucket: "save-your-name.firebasestorage.app",
-  messagingSenderId: "1007156630440",
-  appId: "1:1007156630440:ios:645b84c4b2c754d617839d",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
 }
 
 // Inicializar Firebase
@@ -324,17 +324,17 @@ const styles = StyleSheet.create({
     minHeight: 50,
   },
   button: {
-    backgroundColor: "#445caaff",
+    backgroundColor: "#4460beff", // Azul más oscuro y visible
     paddingVertical: 18,
     borderRadius: 16,
     alignItems: "center",
     marginTop: 12,
-    shadowColor: "#3b82f6",
+    shadowColor: "#1e40af",
     shadowOffset: {
       width: 0,
       height: 4,
     },
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.4,
     shadowRadius: 8,
     elevation: 8,
   },
