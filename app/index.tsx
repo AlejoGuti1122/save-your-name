@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
     minHeight: 50,
   },
   button: {
-    backgroundColor: "#4460beff", // Azul más oscuro y visible
+    backgroundColor: "#4a64bcff", // Azul más oscuro y visible
     paddingVertical: 18,
     borderRadius: 16,
     alignItems: "center",
